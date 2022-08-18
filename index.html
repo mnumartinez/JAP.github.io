@@ -17,13 +17,26 @@
 </head>
 
 <body>
-  <main class="mt-5">
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+  <div><img src="img/login.png"></div>
+    <main class="mt-5">
+      <form class="formulario" id="form">
+      <h1>Inicio de Sesión</h1><br>
+      <div class="contenedor">
+      <div class="inputs">
+        <p>Email</p>
+        <input type="email" placeholder="Email" id="mail">
+      </div>
+      <div class="inputs">
+        <p>Contraseña</p>
+        <input type="password" placeholder="Contraseña" id="contraseña">
+
       </div>
     </div>
+    <input type="submit" value="Ingresar" class="boton" id="submitboton" onclick="validar()">
+    
+  </form>
   </main>
+  
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
