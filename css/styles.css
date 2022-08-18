@@ -188,3 +188,60 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+body{
+  margin: 0%;
+  background-color: #F2F3F4
+}
+.formulario{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  }
+.formulario h1{
+  padding-top: 30px;
+  text-align: center;
+  color: #171951;
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+}
+input[type="email"]{
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+input[type="password"]{
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+}
+.contenedor{
+  margin-bottom: 30px;
+}
+.boton{
+  margin-left: 35px;
+  border: none;
+  width: 80%;
+  color: white;
+  font-size: 20px;
+  background-color:#171951; ;
+  padding: 15px 20px;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  margin: 0%;
+}
+img{
+  width:300px;
+  margin:auto;
+  display: block;
+  margin-top: 5%;
+}
