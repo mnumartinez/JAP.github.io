@@ -2,12 +2,15 @@ function validar(){
 var email = document.getElementById("mail").value;
 var contraseña = document.getElementById("contraseña").value;
 if (email === "" || contraseña === ""){
-   alert("Complete todos los campos")
+    alert("Complet todos los campos")
    return false;
-    }
+   }else{
+    redirect(email, contraseña)
+   }
+   
 } 
-function redirect(){
-   if (email && contraseña === true) {
-        window.location = "mainPage.html"
+function redirect(email, contraseña){
+    if (email && contraseña === true) {
+        window.replace = "mainPage.html"
     }   
 }
