@@ -11,6 +11,6 @@ if (email === "" || contraseña === ""){
 } 
 function redirect(email, contraseña){
     if (email && contraseña === true) {
-        window.replace = "mainPage.html"
+        location.replace = "mainPage.html"
     }   
 }
