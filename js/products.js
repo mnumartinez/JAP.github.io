@@ -1,5 +1,18 @@
-let URL_datos = "https://japceibal.github.io/emercado-api/cats_products/101.json"
-fetch (URL_datos)
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.log(error))
+const url =  ("https://japceibal.github.io/emercado-api/cats_products/101.json");
+let cont = document.getElementById("auto");
+function showData(dataN){
+    for(let a of dataN){
+        cont.innerHTML += `<p class="mb-1">${a.name}</p>
+        <p>${a.description}</p>
+        <img src="${a.image}">
+            `
+    
+ }
+}
+
+async function fetchdata(){
+    let response = await fetch(url);
+    let data = await response.json();
+    showData(data.products);
+}
+fetchdata();
