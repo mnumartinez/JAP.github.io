@@ -1,7 +1,7 @@
 function validar(){
     var email = document.getElementById("mail").value;
     var contraseña = document.getElementById("contraseña").value;
-    if(email=== "" || contraseña.length<8){
+    if(email=== "" || contraseña.length<7){
         alert("complete todos los campos");
         
     }else{
