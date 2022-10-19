@@ -188,6 +188,7 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
 body{
   margin: 0%;
   background-color: #F2F3F4
@@ -214,7 +215,6 @@ input[type="email"]{
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-
 }
 input[type="password"]{
   border: none;
@@ -244,4 +244,20 @@ img{
   margin:auto;
   display: block;
   margin-top: 5%;
+}
+
+#navh4{
+color: #fff;
+}
+
+#commentsCss{
+  padding-top: 30px;
+  text-align: left;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+padding-left: 40px;
+
+}
+#boton{
+  font-size: 25px;
 }
