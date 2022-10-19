@@ -10,17 +10,37 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div id="menuContent"></div>
+  
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
-    </div>
-  </main>
+    <div id="menuContent"></div>
+    <div id="productIden" class="d-flex"></div>
+ <form id="commentsCss">
+    <div id="comments">
+      <h3>Comentarios</h3>
+      
+</div>
+<div id="commentsArea">
+  <textarea name="" id=""></textarea>
+  <select name="select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <button id="boton">Enviar</button>
+    </form>
+</div>
+<div id="relatedP"></div>
+  
+</main>
+  
+  
+  
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
@@ -44,8 +64,9 @@
   <script src="js/product-info.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </body>
-
 </html>
+
+
 <script>
   $(function(){
     $("#menuContent").load("menu.html");
