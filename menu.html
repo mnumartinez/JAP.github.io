@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="js/my-profile.js"></script>
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav w-100 justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link active" href="mainPage.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categories.html">Categorías</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sell.html">Vender</a>
-              </li>
-              <ul>
-                <li class="nav-item dropdown">
-                <a id="navh4" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"></a>
-                <ul class="dropdown-menu">
-                  <li><a href="cart.html" class="dropdown-item">Mi carrito</a></li>
-                  <li><a href="my-profile.html" class="dropdown-item">Mi Perfil</a></li>
-                  <li><a href="index.html" class="dropdown-item">Cerrar sesión</a></li>
-                </ul>
-              </li>
-            </ul>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="mainPage.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <ul>
+            <li class="nav-item dropdown">
+              <a id="navh4" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"></a>
+              <ul class="dropdown-menu">
+                <li><a href="cart.html" class="dropdown-item">Mi carrito</a></li>
+                <li><button class="dropdown-item" onclick="profileValidity()">Mi Perfil</button></li>
+                <li><a href="index.html" class="dropdown-item">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </body>
+
 </html>
 <script>
-    $( document ).ready(function() {
+  $(document).ready(function () {
     var d = localStorage.getItem("correo");
-  $("#navh4").text(localStorage.getItem("correo"));   
+    $("#navh4").text(localStorage.getItem("correo"));
   });
-  </script>
+</script>
