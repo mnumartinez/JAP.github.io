@@ -29,11 +29,59 @@
 <body>
   <div id="menuContent"></div>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+
+
+
+    <form action="" class="row needs-validation mt-4" id="profileF">
+      <div class="col-6">
+        <div class="d-flex justify-content-between">
+          <h3>Perfil</h3>
+        </div>
+        <hr>
+        <div class="row mt-4">
+          <div class="col-6">
+            <label for="firstName" class="d-flex">Nombre</label>
+            <input type="text" id="firstName" required>
+            <div class="invalid-feedback">
+              Ingrese un nombre
+            </div>
+          </div>
+          <div class="col-4">
+            <label for="secondName">Segundo nombre</label>
+            <input type="text" id="secondName">
+          </div>
+
+          <div class="col-6 mt-4">
+            <label for="lastName1" class="d-flex">Apellido</label>
+            <input type="text" id="lastName1" required>
+          </div>
+          <div class="col-6 mt-4">
+            <label for="lastName2" class="d-flex">Segundo apellido</label>
+            <input type="text" id="lastName2">
+          </div>
+
+          <div class="col-6 mt-4">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" required>
+          </div>
+
+          <div class="col-6 mt-4">
+            <label for="contactPhone">Teléfono de contacto</label>
+            <input type="text" id="contactPhone">
+          </div>
+
+          <button type="submit" id="profileBtn" onclick="submitBtn()">Guardar informacion</button>
+
+
+        </div>
       </div>
-    </div>
+    </form>
+
+
+
+
+
+
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -48,12 +96,23 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/my-profile.js"></script>
+  <script src="js/login.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 </body>
 
 </html>
 <script>
-  $(function(){
+  $(function () {
     $("#menuContent").load("menu.html");
-    });
-  </script>
+  });
+  $(document).ready(function () {
+    $("#contactEmail").val(localStorage.getItem("correo"));
+  });
+  $(document).ready(function () {
+    $("#firstName").val(localStorage.getItem("profileName"));
+  });
+  $(document).ready(function () {
+    $("#lastName1").val(localStorage.getItem("ProfileLastName"));
+  });
+</script>
