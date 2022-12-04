@@ -133,88 +133,88 @@
 
         <h4>Forma de pago</h4>
 
-        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="prueba">Seleccionar</a>
-        <div class="dismissible fade" style="color: red;" role="alert" id="alertPrueba">
-          Debe seleccionar metodo de pago
-        </div>
-        </button>
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="prueba">Seleccionar</a>
+          <div class="dismissible fade" style="color: red;" role="alert" id="alertPrueba">
+            Debe seleccionar metodo de pago
+          </div>    
+          </button>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Forma de pago</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div>
-                  <label for="creditCard">Tarjeta de crédito</label>
-                  <input type="radio" name="method" id="creditCard" value="credit" onclick="modalStatus()">
-                  <hr>
-                  <div class="row" id="cardMethod">
-                    <div class="col-6">
-                      <label for="cardNumber">Número de tarjeta</label>
-                      <input type="text" id="cardNumber" required>
-                      <div class="invalid-feedback">
-                        Debe ingresar un número de tarjeta válido
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Forma de pago</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <label for="creditCard">Tarjeta de crédito</label>
+                    <input type="radio" name="method" id="creditCard" value="credit" onclick="modalStatus()">
+                    <hr>
+                    <div class="row" id="cardMethod">
+                      <div class="col-6">
+                        <label for="cardNumber">Número de tarjeta</label>
+                        <input type="text" id="cardNumber" required>
+                        <div class="invalid-feedback">
+                          Debe ingresar un número de tarjeta válido
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <label for="cardCode">Agregue </label>
+                        <input type="text" id="cardCode" required>
+                        <div class="invalid-feedback">
+                          Ingrese su codigo
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <label for="cardDate">Vencimiento MM/AA</label>
+                        <input type="text" id="cardDate" required>
+                        <div class="invalid-feedback">
+                          Ingrese fecha de vencimiento
+                        </div>
                       </div>
                     </div>
-                    <div class="col-4">
-                      <label for="cardCode">Agregue </label>
-                      <input type="text" id="cardCode" required>
-                      <div class="invalid-feedback">
-                        Ingrese su codigo
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <label for="cardDate">Vencimiento MM/AA</label>
-                      <input type="text" id="cardDate" required>
-                      <div class="invalid-feedback">
-                        Ingrese fecha de vencimiento
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <br>
-                  <label for="bankTransfer">Transferencia bancaria</label>
-                  <input type="radio" name="method" id="bankTransfer" value="bank" onclick="modalStatus()">
-                  <div class="row" id="bankMethod" disabled>
-                    <div class="col-6">
-                      <br>
-                      <label for="accNumber">Número de cuenta</label>
-                      <input type="text" id="accNumber" required>
-                      <div class="invalid-feedback">
-                        Ingrese un numero de cuenta
+                    <hr>
+                    <br>
+                    <label for="bankTransfer">Transferencia bancaria</label>
+                    <input type="radio" name="method" id="bankTransfer" value="bank" onclick="modalStatus()">
+                    <div class="row" id="bankMethod" disabled>
+                      <div class="col-6">
+                        <br>
+                        <label for="accNumber">Número de cuenta</label>
+                        <input type="text" id="accNumber" required>
+                        <div class="invalid-feedback">
+                          Ingrese un numero de cuenta
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" id="saveChanges">Guardar</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="saveChanges">Guardar</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <br>
-    <div>
-      <input type="submit" value="Finalizar compra" class="btn-primary" id="confirmB" onclick="validarB()">
-    </div>
-    </form>
-    <div class="alert alert-success alert-dismissible fade" role="alert" id="succesAlert">
-      Compra finalizada!
-    </div>
+        <br>
+        <div>
+          <input type="submit" value="Finalizar compra" class="btn-primary" id="confirmB" onclick="validarB()">
+        </div>
+      </form>
+      <div class="alert alert-success alert-dismissible fade" role="alert" id="succesAlert">
+        Compra finalizada!
+      </div>
 
 
 
 
-  </main>
+</main>
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
@@ -236,6 +236,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/my-profile.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </body>
 
