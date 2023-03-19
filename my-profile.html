@@ -27,13 +27,11 @@
 </head>
 
 <body>
-  <div id="menuContent"></div>
-  <main>
-
-
+  <div class="menuContent"></div>
+  <main class="container">
 
     <form action="" class="row needs-validation mt-4" id="profileF">
-      <div class="col-6">
+      <div class="col-6 offset-3">
         <div class="d-flex justify-content-between">
           <h3>Perfil</h3>
         </div>
@@ -41,69 +39,44 @@
         <div class="row mt-4">
           <div class="col-6">
             <label for="firstName" class="d-flex">Nombre</label>
-            <input type="text" id="firstName" required>
+            <input type="text" id="firstName" class="form-control" required>
           </div>
           <div class="col-4">
             <label for="secondName">Segundo nombre</label>
-            <input type="text" id="secondName">
+            <input type="text" id="secondName" class="form-control">
           </div>
 
           <div class="col-6 mt-4">
             <label for="lastName1" class="d-flex">Apellido</label>
-            <input type="text" id="lastName1" required>
-          </div>
-          <div class="col-6 mt-4">
-            <label for="lastName2" class="d-flex">Segundo apellido</label>
-            <input type="text" id="lastName2">
+            <input type="text" id="lastName1" class="form-control" required>
           </div>
 
           <div class="col-6 mt-4">
-            <label for="contactEmail">Email</label>
-            <input type="email" id="contactEmail" required>
+            <label for="email" class="d-flex">Correo electrónico</label>
+            <input type="email" id="email" class="form-control" required>
           </div>
 
-          <div class="col-4 mt-4">
-            <label for="contactPhone">Teléfono de contacto</label>
-            <input type="text" id="contactPhone">
+          <div class="col-6 mt-4">
+            <label for="phoneNumber" class="d-flex">Número de teléfono</label>
+            <input type="tel" id="phoneNumber" class="form-control" required>
           </div>
+        </div>
 
-          <button type="submit" id="profileBtn" onclick="submitBtn()">Guardar informacion</button>
-
-
+        <div class="row mt-4">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
         </div>
       </div>
     </form>
-  </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
-        2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
-  </footer>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/my-profile.js"></script>
-  <script src="js/login.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $(".menuContent").load("menu.html");
+      });
+    </script>
+  </main>
 </body>
 
 </html>
-<script>
-  $(function () {
-    $("#menuContent").load("menu.html");
-  });
-  $(document).ready(function () {
-    $("#contactEmail").val(localStorage.getItem("correo"));
-  });
-  $(document).ready(function () {
-    $("#firstName").val(localStorage.getItem("profileName"));
-  });
-  $(document).ready(function () {
-    $("#lastName1").val(localStorage.getItem("ProfileLastName"));
-  });
-</script>
