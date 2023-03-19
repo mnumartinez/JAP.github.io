@@ -1,14 +1,10 @@
-function validar(){
+function validar() {
     var email = document.getElementById("mail").value;
     var contraseña = document.getElementById("contraseña").value;
-    if(email=== "" || contraseña.length<7){
-        alert("complete todos los campos");
-        
-    }else{
-        window.location = "mainPage.html"
+    var emailRegExp = /\S+@\S+\.\S+/;
+    if (email === "" || contraseña.length < 7 || !emailRegExp.test(email)) {
+        alert("Complete todos los campos correctamente");
+    } else {
+        window.location = "mainPage.html";
     }
 }
-
-mail.addEventListener("focusout", function(){
-   localStorage.setItem("correo", mail.value);
-})
